@@ -10,6 +10,9 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 - Routing
 - Login form
 - sign up form and Form validations (useRef Hooks)
+- Firebase Set Up
+- Deploying App to Production
+- Create SignUp user Acc. in Firebase
 
 ## Features
 

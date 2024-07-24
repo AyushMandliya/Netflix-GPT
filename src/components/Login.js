@@ -1,6 +1,11 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "../utils/firebase";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -10,27 +15,48 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
 
-  const toggleSignInForm = () => {
-    setIsSignInForm(!isSignInForm);
+  const handleButtonClick = () => {
+    const message = checkValidData(email.current.value, password.current.value);
+    setErrorMessage(message);
+    if (message) return;
+
+    if (!isSignInForm) {
+      // Sign Up
+      createUserWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          const user = userCredential.user;
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage(`${errorCode} - ${errorMessage}`);
+        });
+    } else {
+      // Sign In
+      signInWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          const user = userCredential.user;
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage(`${errorCode} - ${errorMessage}`);
+        });
+    }
   };
 
-  const handleButtonClick = () => {
-    let message;
-    if (isSignInForm) {
-      // For sign-in, do not include the name
-      message = checkValidData(email.current.value, password.current.value);
-    } else {
-      // For sign-up, include the name
-      const nameValue = name.current ? name.current.value : "";
-      message = checkValidData(
-        email.current.value,
-        password.current.value,
-        nameValue
-      );
-    }
-    setErrorMessage(message);
-
-    // Sign in or sign up logic here
+  const toggleSignInForm = () => {
+    setIsSignInForm(!isSignInForm);
   };
 
   return (
