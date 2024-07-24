@@ -13,6 +13,12 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 - Firebase Set Up
 - Deploying App to Production
 - Create SignUp user Acc. in Firebase
+- Implement SignIn user APL
+- created Redux Store with UserSlice
+- Implemented Signout Feature
+- Update Profile API call
+
+- Fetch Movies From TMDB
 
 ## Features
 
@@ -46,14 +52,14 @@ Netflix-GPT/
 │   │   ├── Browse.js
 │   │   ├── Header.js
 │   │   ├── Login.js
-│   │   ├── SignUpForm.js
-│   │   ├── SearchBar.js
-│   │   └── NetflixGPT.js
+│   │   ├──
+│   │   ├──
+│   │   └──
 │   ├── utils/
-│   │   ├── validate.js
+│   │   ├── appStore.js
 │   │   ├── firebase.js
-│   │   ├── BrowsePage.js
-│   │   └── NetflixGPTPage.js
+│   │   ├── userSlice.js
+│   │   └── validate.js
 │   ├── App.js
 │   ├── index.js
 │   ├── tailwind.config.js
