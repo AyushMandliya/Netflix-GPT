@@ -17,6 +17,9 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 - created Redux Store with UserSlice
 - Implemented Signout Feature
 - Update Profile API call
+- BugFix: SignUp user display Name and Profile Picture Update and redirecting/browse to login and vice versa
+- Unsubscribe to be onAuthChanged callback
+- add hardcoded values in constant files
 
 - Fetch Movies From TMDB
 
@@ -43,6 +46,7 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 
 ## Project Structure
 
+````plaintext
 ```plaintext
 Netflix-GPT/
 ├── public/
@@ -60,10 +64,15 @@ Netflix-GPT/
 │   │   ├── firebase.js
 │   │   ├── userSlice.js
 │   │   └── validate.js
+|   |   └── constants.js
 │   ├── App.js
 │   ├── index.js
 │   ├── tailwind.config.js
 │   └── ...
 ├── package.json
 └── README.md
+````
+
+```
+
 ```
