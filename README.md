@@ -31,6 +31,12 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 - Update Store with trailer video data
 - Embeded the yt video and make it autoplay and muted
 - Includes TailwindCSS classes for main container
+- Build Secondary Container
+- Build Movie List
+- build Movie Card
+- TMDB Image CDN URL
+- Made the Browsre page amazing with Tailwind CSS
+- usePopularMovies Custom hook
 
 ## Features
 
@@ -58,32 +64,45 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 ````plaintext
 ```plaintext
 Netflix-GPT/
+
+
 ├── public/
+│   └── (public assets, if any)
 ├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
 │   ├── components/
 │   │   ├── Body.js
 │   │   ├── Browse.js
 │   │   ├── Header.js
 │   │   ├── Login.js
 │   │   ├── MainContainer.js
+│   │   ├── MovieCard.js
+│   │   ├── MovieList.js
 │   │   ├── SecondaryContainer.js
 │   │   ├── VideoBackground.js
 │   │   └── VideoTitle.js
 │   ├── hooks/
+│   │   ├── useMovieTrailer.js
 │   │   ├── useNowPlayingMovies.js
-│   │   └── useMovieTrailer.js
+│   │   └── usePopularMovies.js
 │   ├── utils/
 │   │   ├── appStore.js
-│   │   ├── firebase.js
-│   │   ├── userSlice.js
-│   │   ├── validate.js
 │   │   ├── constants.js
-│   │   └── moviesSlice.js
-│   ├── App.js
-│   ├── index.js
-│   ├── tailwind.config.js
-│   └── ...
+│   │   ├── firebase.js
+│   │   ├── moviesSlice.js
+│   │   ├── userSlice.js
+│   │   └── validate.js
+├── .firebaserc
+├── .gitignore
+├── firebase.json
 ├── package.json
+├── package-lock.json
+├── README.md
+├── tailwind.config.js
 ````
 
 ```
