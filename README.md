@@ -67,11 +67,11 @@ Netflix-GPT/
 │   │   ├── Login.js
 │   │   ├── MainContainer.js
 │   │   ├── SecondaryContainer.js
-│   │   └── VideoBackground.js
-|   |   |__VideoTitle.js
+│   │   ├── VideoBackground.js
+│   │   └── VideoTitle.js
 │   ├── hooks/
-│   │   └── useNowPlayingMovies.js
-|   |   |__useMovieTrailer.js
+│   │   ├── useNowPlayingMovies.js
+│   │   └── useMovieTrailer.js
 │   ├── utils/
 │   │   ├── appStore.js
 │   │   ├── firebase.js
