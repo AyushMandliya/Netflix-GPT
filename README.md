@@ -19,8 +19,9 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 - Update Profile API call
 - BugFix: SignUp user display Name and Profile Picture Update and redirecting/browse to login and vice versa
 - Unsubscribe to be onAuthChanged callback
-- add hardcoded values in constant files
-
+- Add hardcoded values in constant files
+- Register on TMDB and create an App and get access token
+- Get data from tmdb and now playing movies list API
 - Fetch Movies From TMDB
 
 ## Features
@@ -56,21 +57,23 @@ Netflix-GPT/
 │   │   ├── Browse.js
 │   │   ├── Header.js
 │   │   ├── Login.js
-│   │   ├──
-│   │   ├──
-│   │   └──
+│   │   ├── MainContainer.js
+│   │   ├── SecondaryContainer.js
+│   │   └── ...
+│   ├── hooks/
+│   │   └── useNowPlayingMovies.js
 │   ├── utils/
 │   │   ├── appStore.js
 │   │   ├── firebase.js
 │   │   ├── userSlice.js
-│   │   └── validate.js
-|   |   └── constants.js
+│   │   ├── validate.js
+│   │   ├── constants.js
+│   │   └── moviesSlice.js
 │   ├── App.js
 │   ├── index.js
 │   ├── tailwind.config.js
 │   └── ...
 ├── package.json
-└── README.md
 ````
 
 ```
