@@ -40,6 +40,7 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 - GPT search Page
 - GPT Search Bar
 - MultiLingual Feature
+- Completion of GEMINI AI
 
 ## Features
 
@@ -68,7 +69,6 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 ```plaintext
 Netflix-GPT/
 
-
 ├── public/
 │   └── (public assets, if any)
 ├── src/
@@ -80,22 +80,36 @@ Netflix-GPT/
 │   ├── components/
 │   │   ├── Body.js
 │   │   ├── Browse.js
+│   │   ├── GptMovieSuggestions.js
+│   │   ├── GptSearch.js
+│   │   ├── GptSearchBar.js
 │   │   ├── Header.js
 │   │   ├── Login.js
 │   │   ├── MainContainer.js
 │   │   ├── MovieCard.js
+│   │   ├── MovieDetails.js
 │   │   ├── MovieList.js
+│   │   ├── MoviePage.js
+│   │   ├── MovieTrailer.js
 │   │   ├── SecondaryContainer.js
+│   │   ├── Spinner.js
 │   │   ├── VideoBackground.js
 │   │   └── VideoTitle.js
 │   ├── hooks/
+│   │   ├── useMovieDetails.js
 │   │   ├── useMovieTrailer.js
 │   │   ├── useNowPlayingMovies.js
-│   │   └── usePopularMovies.js
+│   │   ├── usePopularMovies.js
+│   │   ├── useTopRatedMovies.js
+│   │   └── useUpcomingMovies.js
 │   ├── utils/
 │   │   ├── appStore.js
+│   │   ├── configSlice.js
 │   │   ├── constants.js
 │   │   ├── firebase.js
+│   │   ├── geminiAI.js
+│   │   ├── gptSlice.js
+│   │   ├── languageConstants.js
 │   │   ├── moviesSlice.js
 │   │   ├── userSlice.js
 │   │   └── validate.js
@@ -106,6 +120,7 @@ Netflix-GPT/
 ├── package-lock.json
 ├── README.md
 ├── tailwind.config.js
+├── .env
 ````
 
 ```
