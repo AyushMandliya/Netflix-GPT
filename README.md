@@ -37,6 +37,7 @@ Netflix-GPT is a React application styled with TailwindCSS, inspired by Netflix'
 - TMDB Image CDN URL
 - Made the Browsre page amazing with Tailwind CSS
 - usePopularMovies Custom hook
+- GPT search feature
 
 ## Features
 
