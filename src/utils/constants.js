@@ -23,3 +23,21 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+export const NOW_PLAYING_MOVIES =
+  "https://api.themoviedb.org/3/movie/now_playing?page=1";
+
+export const POPULAR_MOVIES =
+  "https://api.themoviedb.org/3/movie/popular?page=1";
+
+export const TOP_RATED_MOVIES =
+  "https://api.themoviedb.org/3/movie/top_rated?page=1";
+
+export const UPCOMING_MOVIES =
+  "https://api.themoviedb.org/3/movie/upcoming?page=1";
+
+export const OPENAI_KEY = "AIzaSyBODPD0qgF01nIW_XT4qcOUdSn3eQV1JAs_KEY";
+
+export const SEARCH_MOVIES = "https://api.themoviedb.org/3/search/movie?query=";
+
+export const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
